@@ -1,11 +1,11 @@
-/* Réinitialisation de quelques styles de base */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style global du corps de page */
+/* Global Body Style */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +13,14 @@ body {
     color: #333;
 }
 
-/* Styles de la barre de navigation */
+/* General Container Style */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
 nav {
     background-color: #004080;
     padding: 10px;
@@ -39,35 +46,35 @@ nav ul li a:hover {
     color: #ffc107;
 }
 
-/* Styles pour la section des fonctionnalités */
-.fonctionnalites {
-    max-width: 1200px;
-    margin: 20px auto;
+/* Section Styles */
+section {
+    margin: 20px 0;
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.fonctionnalites article {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    background-color: #e9e9e9;
-    border-radius: 6px;
-}
-
-.fonctionnalites article h3 {
+section h2 {
     margin-bottom: 15px;
     color: #004080;
 }
 
-/* Style du pied de page */
+/* Article Styles */
+article {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 6px;
+    text-align: center;
+}
+
+article h3 {
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+/* Footer */
 footer {
     background-color: #004080;
     color: #fff;
@@ -76,7 +83,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Optionnel : ajouter un peu de padding autour des conteneurs généraux */
+/* General Div Padding */
 div {
     padding: 20px;
 }

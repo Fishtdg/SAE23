@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="covoiturage.html">Covoiturage</a></li> <!-- Main page pour le covoiturage -- User peut voir ses trajets et les modifier -->
+            <li><a href="planning.html">Planning</a></li> <!-- On peut ajouter qqc pour utiliser l'API Google Calendar la -->
+            <li><a href="carte.html">Carte</a></li> <!-- On peut ajouter qqc pour utiliser l'API Google Maps ? -->
+        </ul>
+    </nav>
+<body>
+    <h1>Créer un Trajet</h1>
+    <form action="/submit-trip" method="POST">
+        <label for="departure">Lieu de départ :</label>
+        <input type="text" id="departure" name="departure" placeholder="Entrez le lieu de départ" required>
+
+        <label for="destination">Destination :</label>
+        <input type="text" id="destination" name="destination" placeholder="Entrez la destination" required>
+
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Heure :</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="seats">Places disponibles :</label>
+        <input type="number" id="seats" name="seats" min="1" placeholder="Entrez le nombre de places disponibles" required>
+        <button type="submit">Créer le Trajet</button>
+    </form>
+    <br>
+    <a href="covoiturage_c.html"><button type="button">Retour</button></a>
+</body>
+</html>
