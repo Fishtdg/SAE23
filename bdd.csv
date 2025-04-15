@@ -1,0 +1,5 @@
+"id_équipage","id_trajet","id_étudiant","valide_aller","valide_retour"
+"id_étudiant","nom","prenom","email","ville_domicile","formation","groupe","sous_groupe","possede_vehicule"
+"id_planning","id_étudiant","jour_semaine","debut_cours","fin_cours"
+"id_trajet","id_étudiant","date_trajet","heure_depart","heure_arrivee","lieu_depart","lieu_arrivee","nb_places_disponibles","nb_places_reservees","statut"
+"id_véhicule","id_étudiant","marque","modele","immatriculation","nb_places","participation","carte_grise","controle_technique","assurance"
